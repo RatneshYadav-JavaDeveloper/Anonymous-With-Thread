@@ -11,14 +11,14 @@ public class AnonymousThreadDemo2 {
 		 */
 		Runnable r = () -> {
 			for (int i = 0; i < 10; i++) {
-				System.out.println("CHILD-HREAD");
+				System.out.println("CHILD-THREAD");
 			}
 		};
 		Thread t = new Thread(r);
 		t.start();
 
 		for (int i = 0; i < 10; i++) {
-			System.out.println("MAIN-HREAD");
+			System.out.println("MAIN-THREAD");
 		}
 	}
 }
